@@ -1,29 +1,19 @@
 # Open Neighborhood App Security
 
-## Setup
+This project is made with ionic and based on the [With Graphql And React Hooks]. As communnications are being done with Graphql this project uses graphql-hooks library to integrate graphql, react, react hooks with ease.
 
-### Install dependencies
+## Available Scripts
 
-Run 
+In the project directory, you can run:
 
-```shell
-$ npm install --save core-js@^3
-$ npm install graphql-hooks
-$ npm install graphql-hooks-memcache
-$ npm install
-```
+### `ionic serve`
 
-## Testing
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:8100/) to view it in the browser.
 
-TBD.
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-## The stack
+### `npm run test`
 
-This project is made with [ionic](https://ionicframework.com/) and based on the [With Graphql And React Hooks].
-As communnications are being done with [Graphql](https://graphql.org) this project uses [graphql-hooks](https://github.com/nearform/graphql-hooks) library to integrate graphql, react, react hooks with ease.
-
-Usefull links:
-
-* [Graphql](https://graphql.org)
-* [React Hooks](https://reactjs.org/docs/hooks-intro.html)
-* [graphql-hooks](https://github.com/nearform/graphql-hooks)
+Launches the test runner in the interactive watch mode.<br />
