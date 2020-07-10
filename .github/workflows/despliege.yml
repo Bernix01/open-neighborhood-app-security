@@ -13,13 +13,15 @@ jobs:
 
     runs-on: ${{ matrix.runs-on }}
 
-    name: ionic build, npx cap add ios,  npx cap add android, npx cap copy 
-    uses: actions/checkout@v2  
-      run: |
-        ionic build --if-present
-        npx cap add ios
-        npx cap add android
-        npx cap copy 
+    steps:
+
+    - name: ionic build, npx cap add ios,  npx cap add android, npx cap copy 
+      uses: actions/checkout@v2  
+        run: |
+          ionic build --if-present
+          npx cap add ios
+          npx cap add android
+          npx cap copy 
     
     
     
