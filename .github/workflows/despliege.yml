@@ -1,14 +1,6 @@
 name: Despliegue
-on:
-  push:
-    branches:
-      - master
-    paths-ignore:
-      - '**.md'
-  pull_request:
-    paths-ignore:
-      - '**.md'
 
+on: [push]
 jobs:
 
   build:
@@ -22,9 +14,13 @@ jobs:
     runs-on: ${{ matrix.runs-on }}
 
     name: ionic build, npx cap add ios,  npx cap add android, npx cap copy 
-    uses: actions/upload-artifact@v1  
+    uses: actions/checkout@v2  
       run: |
         ionic build --if-present
         npx cap add ios
         npx cap add android
         npx cap copy 
+    
+    
+    
+    
