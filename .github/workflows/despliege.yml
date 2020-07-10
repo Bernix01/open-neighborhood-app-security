@@ -15,10 +15,10 @@ jobs:
 
     steps:
 
-    - name: ionic build, npx cap add ios,  npx cap add android, npx cap copy 
+    - name: ionic build, npx cap add ios,  npx cap add android, and npx cap copy 
       uses: actions/checkout@v2  
         run: |
-          ionic build --if-present
+          ionic build
           npx cap add ios
           npx cap add android
           npx cap copy 
