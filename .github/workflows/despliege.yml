@@ -18,7 +18,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: ionic build, npx cap add ios,  npx cap add android, and npx cap copy
         run: |
-          ionic build
+          npm run build
           npx cap add ios
           npx cap add android
           npx cap copy
