@@ -21,11 +21,10 @@ jobs:
 
     runs-on: ${{ matrix.runs-on }}
 
-    name: ionic integrations enable capacitor, ionic build, npx cap add ios,  npx cap add android, npx cap copy 
+    name: ionic build, npx cap add ios,  npx cap add android, npx cap copy 
     uses: actions/upload-artifact@v1  
       run: |
-        ionic integrations enable capacitor
-        ionic build
+        ionic build --if-present
         npx cap add ios
         npx cap add android
         npx cap copy 
